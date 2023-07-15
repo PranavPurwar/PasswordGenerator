@@ -9,19 +9,10 @@ class Main {
 
     fun main(args: Array<String>) {
         println("Generated Password: ${generatePassword()}")
-		System.
     }
 	
-	fun generatePassword(): String {
-	    val digits = CharracterRule(EnglishCharacterData.Alphabetical)
-		return generator.generatePassword(10, digits)
-	}
-	
-	class Password {
-	    val data = ""
-		
-		fun get(): String {
-		    return data
-		}
-	}
+    fun generatePassword(): String {
+        val digits = CharracterRule(EnglishCharacterData.Alphabetical)
+        return generator.generatePassword(10, digits)
+    }
 }
